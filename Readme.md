@@ -72,7 +72,7 @@ Then let's run the workflows with:
 npm run askui
 ```
 
-Each worker is selecting one android devices based on theire `JEST_WORKER_ID`. See line 16 - 31 in `askui_example/helpers/askui-helper.ts`
+Each worker selects one android devices based on their `JEST_WORKER_ID`. See line 16 - 31 in `askui_example/helpers/askui-helper.ts`
 
 
 The output shows that 1 worker connects to 1 device executes the test suite and then disconnect:
