@@ -1,4 +1,5 @@
 import type { Config } from '@jest/types';
+import 'dotenv/config'
 
 
 const config: Config.InitialOptions = {
@@ -8,6 +9,7 @@ const config: Config.InitialOptions = {
   sandboxInjectedGlobals: [
     'Math',
   ],
+  maxWorkers: process.env.JEST_MAX_WORKER ? parseInt(process.env.JEST_MAX_WORKER) : 1
 };
 
 // eslint-disable-next-line import/no-default-export
