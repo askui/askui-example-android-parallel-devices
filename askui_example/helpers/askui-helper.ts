@@ -14,8 +14,8 @@ let workerId: number;
 let uiControllerUrl: string;
 
 beforeAll(async () => {
-  maxWorkers = parseInt(process.env.JEST_MAX_WORKER);
-  workerId = parseInt(process.env.JEST_WORKER_ID);
+  maxWorkers = parseInt(process.env.JEST_MAX_WORKER); // Our env variable defined in .env file
+  workerId = parseInt(process.env.JEST_WORKER_ID); // Each Jest Worker starts as its own process and the index begins with 1. See https://jestjs.io/docs/environment-variables#jest_worker_id
 
   expect(maxWorkers).toBeLessThanOrEqual(uiControllerAndroidDeviceList.length)
 
