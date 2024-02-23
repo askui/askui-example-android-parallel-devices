@@ -8,6 +8,7 @@ const config: Config.InitialOptions = {
   sandboxInjectedGlobals: [
     'Math',
   ],
+  maxWorkers: process.env.JEST_MAX_WORKER ? parseInt(process.env.JEST_MAX_WORKER) : 1
 };
 
 // eslint-disable-next-line import/no-default-export

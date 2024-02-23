@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple example is using askui and paralleize the execution of multiple test suites on 2 android devices to speed up the overall execution time.",
   "scripts": {
-    "askui": "npx jest ./askui_example/ --config ./askui_example/jest.config.ts --maxWorkers $(node -e \"require('dotenv').config();console.log(process.env.JEST_MAX_WORKER || 1)\")"
+    "askui": "npx jest ./askui_example/ --config ./askui_example/jest.config.ts"
   },
   "author": "Dominik Klotz <dominik.klotz@askui.com>",
   "license": "MIT",
@@ -17,6 +17,8 @@
     "jest": "^29.7.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@jest/types": "^29.6.3",
+    "dotenv": "^16.4.5"
   }
 }
