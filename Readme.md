@@ -1,5 +1,5 @@
 # askui-example-android-parallel-devices
-Simple example is using askui and paralleize the execution of multiple test suites on 2 android devices to speed up the overall execution time.
+A simple example using AskUI to parallelize the execution of multiple test suites on 2 Android devices to speed up the overall execution time.
 
 ### Pre-Requests
 - 2 Android Devices connected to the local device
@@ -14,7 +14,7 @@ npm install
 
 ## Configure
 
-Set the following environment variables to configure the example. The `ASKUI_WORKSPACE_ID` and `ASKUI_TOKEN` are required to connect to the askui services. Read at our docs on how to get them: [Windows](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started#step-4-connect-your-askui-account) [Linux](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started-linux#access-token), [macOS](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started-macos#access-token).
+Set the following environment variables to configure the example. The `ASKUI_WORKSPACE_ID` and `ASKUI_TOKEN` are required to connect to the askui services. Read our docs on how to get them: [Windows](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started#step-4-connect-your-askui-account) [Linux](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started-linux#access-token), [macOS](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started-macos#access-token).
 
 1. Copy the `.env.template` to `.env` and insert the value for `ASKUI_WORKSPACE_ID` and `ASKUI_TOKEN` e.g.
 
@@ -25,11 +25,11 @@ ASKUI_TOKEN=<your_workspace_token>
 JEST_MAX_WORKER=1
 ```
 
-2. Configure your 2 android device with following Guide [Setup Real Android Devices](https://docs.askui.com/docs/general/Executing%20Automations/mobile-automation#set-up-a-real-android-device)
+2. Configure your 2 Android device with the following Guide [Setup Real Android Devices](https://docs.askui.com/docs/general/Executing%20Automations/mobile-automation#set-up-a-real-android-device)
 
 3. Donwload the controller [Windows](https://files.askui.com/releases/askui-ui-controller/latest/win32/x64/askui-ui-controller.exe) | [Mac (Intel)](https://files.askui.com/releases/askui-ui-controller/latest/darwin/x64/askui-ui-controller.dmg) | [Mac (ARM)](https://files.askui.com/releases/askui-ui-controller/latest/darwin/arm64/askui-ui-controller.dmg ) | [Linux](https://files.askui.com/releases/askui-ui-controller/latest/linux/x64/askui-ui-controller.AppImage) and copy it to this project `askui-example-android-multiple-devices/askui-ui-controller.{exe,dmg,AppImage}`
 
-__Note__: I continue as a windows user and use the `askui-ui-controller.exe` 
+__Note__: I continue as a Windows user and use the `askui-ui-controller.exe` 
 
 
 
@@ -72,10 +72,10 @@ Then let's run the workflows with:
 npm run askui
 ```
 
-Each worker selects one android devices based on their `JEST_WORKER_ID` [(docs)](https://jestjs.io/docs/environment-variables#jest_worker_id). See line 16 - 31 in `askui_example/helpers/askui-helper.ts`
+Each worker selects one Android device based on their `JEST_WORKER_ID` [(docs)](https://jestjs.io/docs/environment-variables#jest_worker_id). See line 16 - 31 in `askui_example/helpers/askui-helper.ts`
 
 
-The output shows that one worker connects to one device, executes the test suite and then disconnect:
+The output shows that one worker connects to one device, executes the test suite and then disconnects:
 
 ```
 
@@ -268,4 +268,4 @@ Ran all test suites matching /.\/askui_example\//i.
 
 
 
-Afterwards ther should be two reports under html screenshots `./report/`
+Afterwards there should be two reports under html screenshots `./report/`
