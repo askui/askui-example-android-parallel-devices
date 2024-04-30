@@ -29,7 +29,7 @@ JEST_MAX_WORKER=1
 
 ### Windows
 
-Nothing Todo. The AskUI Controller is available inside the AskUI Shell
+Nothing Todo. The AskUI Controller is available inside the AskUI Shell.
 
 ### Mac, Linux
 
@@ -56,7 +56,7 @@ askui-shell
 # Start first AskUI Controller on Port 6769 for android device 0 (emulator-5556)
 Start-AskUIController -DisplayNum 0 -m -Runtime android -Port 6769  
 
-# Start second AskUI Controller on Port 6869 for android device 1 (emulator-5554)
+# Start second AskUI Controller on Port 6770 for android device 1 (emulator-5554)
 Start-AskUIController -DisplayNum 1 -m -Runtime android -Port 6770  
 ```
 
