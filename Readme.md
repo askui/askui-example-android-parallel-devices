@@ -87,7 +87,7 @@ const uiControllerAndroidDeviceList = ["ws://127.0.0.1:6769", "ws://127.0.0.1:67
 ...
 ```
 
-The `JEST_MAX_WORERS` in `.env` defines the [max number of Jest Workes](https://jestjs.io/docs/cli#--maxworkersnumstring). This number should be less or equal to the number of devices. Therfore we set it `2`:
+The `JEST_MAX_WORERS` in `.env` defines the [max number of Jest Workes](https://jestjs.io/docs/cli#--maxworkersnumstring). This number should be less or equal to the number of devices. Therefore we set it `2`:
 ```
 ...
 JEST_MAX_WORKER=2
