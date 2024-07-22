@@ -1,7 +1,7 @@
 import { UiControlClient } from 'askui';
 
 // List of AskUI Controller connected to remote devices
-const uiControllerAndroidDeviceList = ["ws://127.0.0.1:6769", "ws://127.0.0.1:6770"]
+const uiControllerAndroidDeviceList = ["ws://127.0.0.1:6769", "ws://127.0.0.1:6869"]
 
 // Client is necessary to use the askui API
 let aui: UiControlClient;

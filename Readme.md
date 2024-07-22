@@ -36,7 +36,7 @@ Nothing Todo. The AskUI Controller is available inside the AskUI Shell.
 
 
 ## Usage
-First, we check if both android devices are connected. This should look like:
+First, we check if both Android devices are connected. This should look like:
 
 ```bash
 $ adb devices
