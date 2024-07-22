@@ -1,5 +1,5 @@
 import type { Config } from '@jest/types';
-import 'dotenv/config'
+import 'dotenv/config';
 
 
 const config: Config.InitialOptions = {

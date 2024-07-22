@@ -1,4 +1,5 @@
 import { UiControlClient } from 'askui';
+import 'dotenv/config';
 
 // List of AskUI Controller connected to remote devices
 const uiControllerAndroidDeviceList = ["ws://127.0.0.1:6769", "ws://127.0.0.1:6869"]
